@@ -68,3 +68,5 @@ listStudents.forEach(function (element) {
     `
   );
 });
+
+const filterList = listStudents.filter(elem => elem.userName.length > 7);
