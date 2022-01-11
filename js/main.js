@@ -50,7 +50,9 @@ const listStudents = [
   }
 ]
 
-listStudents.forEach(function (element) {
+const filterList = listStudents.filter(elem => elem.userName.length > 7);
+
+filterList.forEach(function (element) {
   document.getElementById("table").insertAdjacentHTML(
     "beforeEnd",
     `
@@ -68,5 +70,3 @@ listStudents.forEach(function (element) {
     `
   );
 });
-
-const filterList = listStudents.filter(elem => elem.userName.length > 7);
